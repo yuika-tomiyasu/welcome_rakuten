@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('index', 'ContentsController@index')->name('contents.index');
+Route::get('branch', 'ContentsController@branch')->name('contents.branch');
+Route::get('gallery', 'ContentsController@gallery')->name('contents.gallery');
